@@ -3,6 +3,27 @@
   font-family: 'Roboto', sans-serif;
 }
 
+#scroll{
+  /* scroll-behavior: smooth; */
+  overflow-y: hidden !important;
+}
+
+/* overflowY: 'scroll', '&::webkitScrollbar': { height: '1px' }, '&::-webkit-scrollbar-thumb': { backgroundColor: 'rgb(216, 216, 216)', borderRadius: '40px' } */
+#scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+#scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+#scroll::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 50px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
